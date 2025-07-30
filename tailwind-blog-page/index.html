@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Webpage</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-500 min-h-screen flex flex-col">
+    <header>
+        <nav class="flex md:flex-row flex-col md:justify-between md:items-center items-start bg-gray-300"> 
+            <div class="left-nav flex gap-3 items-center px-5 md:self-center">
+                <img src="images/logo.svg" alt="logo" class="w-7"> 
+                <p class="font-bold">MyBlog</p>
+            </div>
+            <div class="nav-right w-full">
+                <ul class="flex flex-row gap-10 md:justify-end justify-around py-2 px-5 md:p-5 md:text-lg text-sm">
+                    <li><a href="#" class="hover:text-blue-600 transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition duration-300">About</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex flex-1 flex-col justify-center bg-white my-2 drop-shadow-md">
+        <section class="first-section">
+            <h1 class="text-center text-2xl sm:text-3xl m-5 font-bold text-gray-800 mb-2">Welcome to My Blog</h1>
+            <h3 class="text-center italic text-gray-700 text-md sm:text-lg">A space to share thoughts, stories, and ideas.</h3>
+            <button class="flex bg-blue-200 rounded-3xl py-2 px-4 mt-10 mx-auto hover:bg-blue-300 transition duration-300 cursor-pointer">Explore</button>
+        </section>
+
+        <section class="second-section p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="card-1 w-full md:max-w-[500px] m-auto bg-gray-200 rounded-xl shadow-lg mb-20 drop-shadow-lg hover:scale-102 transition duration-200">
+                <div class="img h-[300px] p-3 overflow-hidden">
+                <img src="images/blog1.avif" class="rounded-xl w-full h-full object-fill" alt=""></div>
+                <h2 class="font-semibold text-lg px-5 mb-5">Why I Started This Blog</h2>
+                <p class="text-gray-600 p-5 text-md ">Sharing what I learn, create, and enjoy in simple words...</p>
+                <button class="block my-3 mx-auto rounded-3xl bg-blue-200 p-3 hover:bg-blue-300 transition duration-300 cursor-pointer">Read More</button>
+            </div>
+            <div class="card-2 w-full md:max-w-[500px] m-auto bg-gray-200 rounded-xl shadow-lg mb-20 drop-shadow-lg hover:scale-102 transition duration-200">
+                <div class="img h-[300px] p-3 overflow-hidden" class="">
+                <img src="images/blog2.avif" class="rounded-xl w-full h-full object-cover" alt=""></div>
+                <h2 class="font-semibold text-lg px-5 mb-5">Simple Productivity Tips</h2>
+                <p class="text-gray-600 p-5 text-md ">Easy ways to stay organized and focused during college...</p>
+                <button class="block my-3 mx-auto rounded-3xl bg-blue-200 p-3 hover:bg-blue-300 transition duration-300 cursor-pointer">Read More</button>
+            </div>
+            <div class="card-3 w-full md:max-w-[500px] m-auto bg-gray-200 rounded-xl shadow-lg mb-20 drop-shadow-lg hover:scale-102 transition duration-200">
+                <div class="img h-[300px] p-3 overflow-hidden" class="">
+                <img src="images/blog3.avif" class="rounded-xl w-full h-full object-cover" alt=""></div>
+                <h2 class="font-semibold text-lg px-5 mb-5">Learning Web Development</h2>
+                <p class="text-gray-600 p-5 text-md ">My journey of building websites and learning to code...</p>
+                <button class="block my-3 mx-auto rounded-3xl bg-blue-200 p-3 hover:bg-blue-300 transition duration-300 cursor-pointer">Read More</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center md:items-center items-start bg-gray-300 p-3 text-sm" >
+        &copy; All Rigits Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grade Tracker</title>
+  <style>
+    .form {
+      background-color: rgb(203, 223, 213);
+      width: 40vw;
+      margin: 100px auto;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+    }
+
+    input,
+    select {
+      width: 100%;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      margin: 20px 0;
+    }
+
+    label {
+      font-size: 20px;
+    }
+
+    input:focus {
+      border: none;
+      background-color: rgb(213, 212, 212);
+    }
+
+    button {
+      padding: 15px;
+      font-size: 17px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(126, 197, 173);
+      margin-top: 50px;
+      cursor: pointer;
+    }
+
+    button:focus {
+      border: none;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form">
+    <label for="student-name">Name:</label>
+    <input type="text" id="student-name">
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject">
+    <label for="marks">Marks:</label>
+    <input type="number" id="marks">
+    <div class="buttons">
+      <button type="button" onclick="handleSubmit()">Submit</button>
+      <button type="button" onclick="handleClear()">Clear</button>
+    </div>
+    <p id="result"></p>
+    <p id="total"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
